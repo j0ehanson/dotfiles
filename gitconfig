@@ -1,0 +1,33 @@
+[user]
+	name = Joe Hanson
+	email = jhanson@vistahigherlearning.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[color "diff"]
+  meta = yellow
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %cn)%Creset' --abbrev-commit --date=relative
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+[core]
+  excludesfile = /home/jhanson/.gitignore
+  whitespace = trailing-space,space-before-tab
+          symlinks = true
+[rerere]
+  excludesfilenabled = 1
+[push]
+  default = current
+[diff]
+  mnemonicprefix = true
+[merge]
+  stat = true
